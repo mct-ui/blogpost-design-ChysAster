@@ -1,3 +1,21 @@
+/* 
+    Fonts
+    --- 
+    @font-face declarations
+*/
+
+@font-face{
+    font-family: "Inter Web";
+    font-weight: 400;
+    src: url("../fonts/Inter-Regular.woff2") format("woff2");
+}
+
+@font-face{
+    font-family: "Inter Web";
+    font-weight: 700;
+    src: url("../fonts/Inter-Bold.woff2") format("woff2");
+}
+
 /*
     Elements: Page
     ---
@@ -7,9 +25,13 @@
 html {
     font-size: 16px;
     line-height: 1.5;
-    font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
-    color: #111;
+    /* font-family:"Inter Web", "Helvetica Neue", Helvetica, arial, sans-serif; */
+    font-family: "droid-serif",Georgia, serif;
+
+    color: #5C6366;
     padding: 48px 24px 24px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -24,8 +46,15 @@ body {
  * Customize the background color to match your design.
  */
 
+ h1,
+ h2,
+ h3{
+    color: #17181A;
+    font-family: "Inter Web", sans-serif;
+ }
+
 ::selection {
-    background: #e85e00;
+    background: #00a1e6;
     color: white;
     text-shadow: none;
 }
@@ -48,11 +77,12 @@ img {
 */
 
 h1 {
-    font-family: "Times New Roman", serif;
+    /* font-family: "Times New Roman", serif; */
+    font-family: "Playfair Display", serif;
     font-size: 36px;
-    font-weight: normal;
     line-height: 40px;
     margin: 0 0 24px;
+
 }
 
 h2 {
@@ -123,18 +153,18 @@ hr {
 }
 
 a {
-    color: RoyalBlue;
+    color: #00a1e6;
     transition: all .1s ease-in-out;
 }
 
 a:visited,
 a:active {
-    color: BlueViolet;
+    color: #00a1e6;
 }
 
 a:hover,
 a:focus {
-    color: Crimson;
+    color: #1abaff;
 }
 
 /* Small devices (landscape phones, 576px and up) */
